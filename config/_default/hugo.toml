@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 copyright = "© Elif DOGAN"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
@@ -6,15 +5,6 @@ enableRobotsTXT = true
 baseURL = "https://elifdogann.github.io/Rataouille_VRControl_Elif_Dogan/"
 languageCode = "en"
 timeZone = "Europe/Berlin"
-=======
-copyright = "© ElifDOGAN"
-defaultContentLanguage = "en"
-disableKinds = ["taxonomy"]
-enableRobotsTXT = true
-languageCode = "en"
-timeZone = "Europe/Berlin"
-#baseURL = "https://elifdogann.github.io/Rataouille_VRControl_Elif_Dogan/"
->>>>>>> 915e414 (first image headings and general features)
 timeout = "120s"
 title = "IARVR - VR Parkour Game"
 
