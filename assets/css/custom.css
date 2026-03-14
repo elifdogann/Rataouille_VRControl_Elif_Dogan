@@ -57,11 +57,13 @@ body > header {
 .page-content img {
   display: block;
   width: 100%;
-  max-width: 1400px;
+  max-width: 550px;
   height: auto;
   margin: 1rem auto 2.5rem auto;
   border-radius: 16px;
 }
+
+
 
 .demo-video {
   display: block;
