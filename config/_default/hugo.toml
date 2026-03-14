@@ -61,3 +61,8 @@ title = "IARVR - VR Parkour Game"
 [services]
   [services.rss]
     limit = 100
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

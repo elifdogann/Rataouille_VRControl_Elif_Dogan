@@ -33,3 +33,42 @@ body > header {
   margin-bottom: 0;
 }
 */
+
+.page-content {
+  width: 92%;
+  max-width: 1200px;
+  margin: 2rem auto 3rem auto;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+.page-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.page-content h2,
+.page-content h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.page-content img {
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin: 1rem auto 2.5rem auto;
+  border-radius: 16px;
+}
+
+.demo-video {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 1.5rem auto 2.5rem auto;
+  border-radius: 16px;
+  background: #111;
+}

@@ -3,7 +3,7 @@ description: A Ratatouille-Inspired VR Locomotion Parkour Game
 #lastmod: 2023-07-05
 title: Mind Over Mouse
 resources:
-  - src: martin-martz-wRuhOOaG-Z4-unsplash.jpg
+  - src: 00- mindovermouse.png
     params:
       cover: true # cover of the home page is used for OpenGraph cards, etc.
 menus:
