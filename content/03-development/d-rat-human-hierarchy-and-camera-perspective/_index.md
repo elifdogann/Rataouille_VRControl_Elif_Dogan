@@ -1,6 +1,6 @@
 ---
-title: "Establishing Rat Believability and Gameplay Identity"
-weight: 4
+title: "Rat-Human Hierarchy & Camera Perspective"
+weight: 3
 resources:
   - src: dev_page_4.jpg
     params:

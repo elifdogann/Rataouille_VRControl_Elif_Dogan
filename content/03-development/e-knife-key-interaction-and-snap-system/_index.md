@@ -1,6 +1,6 @@
 ---
-title: "Designing Controller-Based Pull Locomotion"
-weight: 5
+title: "Knife-Key Interaction & Snap System"
+weight: 4
 resources:
   - src: dev_page_5.png
     params:

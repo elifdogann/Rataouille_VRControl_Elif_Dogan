@@ -1,5 +1,5 @@
 ---
-title: "Prototyping and Refactoring the Locomotion Architecture"
+title: "Locomotion Architecture & Input Abstraction"
 weight: 2
 resources:
   - src: dev_page_2.png

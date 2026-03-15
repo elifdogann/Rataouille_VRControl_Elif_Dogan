@@ -13,3 +13,8 @@ resources:
     params:
       cover: true
 ---
+
+
+Over the course of development, five major milestone areas emerged. Each brought its own architectural challenges, debugging sessions, and design pivots. This document covers all five in technical detail, including the problems encountered and the reasoning behind every significant decision.
+
+

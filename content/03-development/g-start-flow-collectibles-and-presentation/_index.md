@@ -1,8 +1,8 @@
 ---
-title: "Defining the Core Control Philosophy"
-weight: 1
+title: "Start Flow, Collectibles & Presentation"
+weight: 7
 resources:
-  - src: dev_page_1.png
+  - src: dev_page_7.jpg
     params:
       cover: true
 ---

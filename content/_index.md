@@ -16,3 +16,4 @@ menus:
 #    publishResources: false # do not include full images. Also disable download
 ---
 
+This blog documents the complete technical development journey of a Unity-based VR parkour game built for the TU Darmstadt IARVR course in WS25/26. The project moved well beyond a standard joystick-driven experience: the core concept places the player in the perspective of a rat character sitting on a human's head, steering the human through a parkour environment by pulling the human's hair with controller gestures — a locomotion metaphor directly inspired by the film Ratatouille.
