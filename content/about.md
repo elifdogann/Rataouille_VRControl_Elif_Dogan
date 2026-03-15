@@ -6,7 +6,7 @@ menu:
   main:
     weight: 90
 ---
-![Developer Introduce](/about.jpg)
+{{< relimg src="about.jpg" alt="Developer Introduce" >}}
 
 ## Bridging Research and Practice
 
