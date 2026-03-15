@@ -1,4 +1,4 @@
----
+﻿---
 title: "Knife-Key Interaction & Snap System"
 weight: 4
 resources:
@@ -23,8 +23,8 @@ The parkour environment includes an object interaction sequence: the player must
 
 ## Knife Grab - First Problems
 The initial knife grab script used a button-based grab state and updated knife transform to match controller position and rotation. Two failure modes appeared:
-•	The button field in the Unity Inspector was left as None - the script received no valid input and grab never activated
-•	Controller side, button type (Axis1D vs Button), and object references all had to be verified independently
+â€¢	The button field in the Unity Inspector was left as None - the script received no valid input and grab never activated
+â€¢	Controller side, button type (Axis1D vs Button), and object references all had to be verified independently
 
 The initial grab-follow logic was structured as follows:
 
@@ -71,11 +71,11 @@ joint.xMotion = joint.yMotion = joint.zMotion = ConfigurableJointMotion.Limited;
 ```
 
 Problems with this approach:
-•	Key pushed away from the knife instead of attaching - the system was in collision-response mode, not attachment mode
-•	Multiple attachment scripts accidentally active at once caused undefined behavior
-•	ConfigurableJoint + Rigidbody constraints + trigger timing created cascading instability
-•	A compile error appeared: an external script attempted to read a grab state property that was not exposed as a public readable field from the knife component
-•	Chest-area colliders triggered the placement check prematurely before the key reached the slot
+â€¢	Key pushed away from the knife instead of attaching - the system was in collision-response mode, not attachment mode
+â€¢	Multiple attachment scripts accidentally active at once caused undefined behavior
+â€¢	ConfigurableJoint + Rigidbody constraints + trigger timing created cascading instability
+â€¢	A compile error appeared: an external script attempted to read a grab state property that was not exposed as a public readable field from the knife component
+â€¢	Chest-area colliders triggered the placement check prematurely before the key reached the slot
 
 ## Snap-Based Solution
 The key handling system was redesigned around snapping. When knife tip and key met proximity/alignment conditions, the key was parented to the knife tip. LateUpdate-based transform synchronization ensured the key visually kept up with fast VR controller motion without lag artifacts.
@@ -98,11 +98,11 @@ localRotOffset = transform.localRotation;
 ## Chest Slot Validation
 
 Trigger-based collision checks were replaced with position and rotation tolerance validation. The chest slot script compared the transported key's world position and rotation against target values within defined thresholds. Once validated:
-•	Audio confirmation played
-•	Chest was removed from the scene (SetActive false or Destroy)
-•	Knife was optionally removed
-•	A book was spawned at a dedicated empty-transform spawn point
-•	Optional particle effect was triggered
+â€¢	Audio confirmation played
+â€¢	Chest was removed from the scene (SetActive false or Destroy)
+â€¢	Knife was optionally removed
+â€¢	A book was spawned at a dedicated empty-transform spawn point
+â€¢	Optional particle effect was triggered
 
 The validation phase then checked whether the carried key matched the slot's target position and rotation within small tolerances, instead of relying on raw trigger overlap.
 
@@ -124,3 +124,4 @@ transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, smooth);
 ```
 
 A critical implementation note: the book spawn point must be a dedicated empty Transform - using any other object reference (such as the chest itself) caused the spawn to fail after the chest was removed.
+

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Rope Visual & Gesture-Based Control"
 weight: 6
 resources:
@@ -14,11 +14,11 @@ The locomotion metaphor - rat pulling human hair via reins - required a visible 
 ## First Implementation: Physics-Based Rope
 
 Anchors HairGrab_L/R were placed on the human hierarchy. RatHand_L_Follow anchors represented the rat's hand positions. A cylinder-based mesh rope connected them. Problems appeared immediately:
-•	Transform-space conflicts: world-space versus local-space inconsistencies caused the rope to appear below the ground plane
-•	Texture tiling artifacts made the rope appear dotted at certain lengths
-•	Back-face culling caused the rope to disappear when viewed from certain angles
-•	Unity's Y-axis default elongation for cylinder primitives required manual rotation correction
-•	Animator-driven bone interference: parent bones moved by the animator shifted the rope anchors unpredictably
+â€¢	Transform-space conflicts: world-space versus local-space inconsistencies caused the rope to appear below the ground plane
+â€¢	Texture tiling artifacts made the rope appear dotted at certain lengths
+â€¢	Back-face culling caused the rope to disappear when viewed from certain angles
+â€¢	Unity's Y-axis default elongation for cylinder primitives required manual rotation correction
+â€¢	Animator-driven bone interference: parent bones moved by the animator shifted the rope anchors unpredictably
 
 ## Architectural Correction: Decouple Visual from Logic
 
@@ -45,3 +45,4 @@ Android builds failed with an IL2CPP compilation error referencing Meta.XR.Immer
 ## Movement Smoothing
 
 To prevent robotic motion, Mathf.MoveTowards was applied to speed transitions. Jump cooldown mechanisms prevented double-jumps. Rotational smoothing used Slerp/LookRotation to prevent the spin artifact that appeared when angular velocity was applied as an absolute per-frame value - earlier pull implementations that used SignedAngle directly caused the human to spin uncontrollably.
+

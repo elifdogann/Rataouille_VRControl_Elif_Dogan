@@ -1,4 +1,4 @@
----
+﻿---
 title: "Rat-Human Hierarchy & Camera Perspective"
 weight: 3
 resources:
@@ -20,10 +20,10 @@ A human-like model was imported from the Asset Store. It consistently failed to 
 ## OVR Rig Parenting Restrictions
 
 The deeper structural problem was that OVRCameraRig and CenterEyeAnchor cannot be reparented like ordinary GameObjects. Attempts included:
-•	Moving OVRCameraRig under LocomotionRoot or RatAnchor
-•	Creating new anchors under TrackingSpace
-•	Applying offset via RatRoot.TransformDirection
-•	Copying RatRoot transform directly onto the camera
+â€¢	Moving OVRCameraRig under LocomotionRoot or RatAnchor
+â€¢	Creating new anchors under TrackingSpace
+â€¢	Applying offset via RatRoot.TransformDirection
+â€¢	Copying RatRoot transform directly onto the camera
 
 Each attempt produced one of three symptoms: a flying camera that drifted upward indefinitely, a camera locked to the ground, or continuous forward drift. The Unity error 'Cannot restructure Prefab instance' confirmed that CenterEyeAnchor resets itself at runtime and cannot be repositioned by standard parenting.
 
@@ -40,3 +40,4 @@ The goal state - visible in the same frame: the human's hair, the rat's ears and
 ## Human Grounding Problem
 
 The human model's feet did not touch the ground correctly - the character appeared partially sunken into the floor. Root cause: the ParkourActor capsule collider center and height did not match the visual mesh, and VR floor-level tracking differed from the visual body's reference height. The fix targeted Collider center Y, capsule height, and HumanVisual local Y offset simultaneously - never the camera.
+
