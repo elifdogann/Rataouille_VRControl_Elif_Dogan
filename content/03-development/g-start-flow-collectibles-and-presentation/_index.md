@@ -32,6 +32,12 @@ The correct solution preserved the coin collection logic entirely and changed on
 
 Audio feedback was paired with collection events to provide sensory reinforcement — a small but significant contribution to the gameplay rhythm between fast traversal segments and slower interaction segments.
 
+<img src="vegie_1.png" alt="Refactor" style="width: 200%; max-width: 1000px; display: block; margin: 1.25rem auto 2.5rem auto;" />
+
+<img src="vegie_2.png" alt="Refactor" style="width: 200%; max-width: 1000px; display: block; margin: 1.25rem auto 2.5rem auto;" />
+
+
+
 ## Rat Secondary Animation
 
 The rat model required secondary motion to feel alive rather than static. A RatSecondaryMotion script generated:

@@ -11,6 +11,12 @@ resources:
 
 The parkour environment includes an object interaction sequence: the player must use a knife as an indirect manipulation tool to transport a key to a chest slot, unlock the chest, and trigger a book reveal. This is described academically as tool-based indirect manipulation — the knife is the tool, the key is the indirectly controlled object, and snapping provides system-assisted precision.
 
+<div class="video-block">
+  <video controls playsinline class="demo-video">
+    <source src="grab_knife.mp4" type="video/mp4">
+  </video>
+</div>
+
 ## Interaction Sequence
 
 <img src="4-_milestone_1.png" alt="Refactor" style="width: 200%; max-width: 1200px; display: block; margin: 1.25rem auto 2.5rem auto;" />
@@ -47,5 +53,10 @@ Trigger-based collision checks were replaced with position and rotation toleranc
 •	A book was spawned at a dedicated empty-transform spawn point
 •	Optional particle effect was triggered
 
-A critical implementation note: the book spawn point must be a dedicated empty Transform — using any other object reference (such as the chest itself) caused the spawn to fail after the chest was removed.
+<div class="video-block">
+  <video controls playsinline class="demo-video">
+    <source src="open_chest.mp4" type="video/mp4">
+  </video>
+</div>
 
+A critical implementation note: the book spawn point must be a dedicated empty Transform — using any other object reference (such as the chest itself) caused the spawn to fail after the chest was removed.
