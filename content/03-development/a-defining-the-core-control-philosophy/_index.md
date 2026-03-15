@@ -49,6 +49,9 @@ This definition of control changed the nature of the entire prototype. The playe
 framed as a floating observer who simply drives a camera through space. Instead, the player
 became part of a relationship between a visible human body and an external source of influence.
 
+<img src="dev_page_define_1.png" alt="Defining Core Control" style="width: 200%; max-width: 1000px; display: block; margin: 1.25rem auto 2.5rem auto;" />
+
+
 That framing gave later visual, mechanical, and spatial decisions a common direction.
 As a result, the core principle of the project became clear very early: reading input and applying
 movement are not the same operation, and the interpretive layer between them defines the identity
@@ -98,6 +101,8 @@ participating in a layered body relationship. This made the control metaphor mor
 By the end of the milestone, the project had achieved two linked outcomes: its scene hierarchy was
 technically more coherent, and the feeling produced by that technical arrangement became more legible to the player. 
 This directly prepared the ground for making the rat-human identity more convincing in the following stages.
+
+<img src="dev_page_define_2.jpg" alt="Proxy" style="width: 200%; max-width: 1000px; display: block; margin: 1.25rem auto 2.5rem auto;" />
 
 ## Establishing Rat Believability and Gameplay Identity
 
@@ -197,9 +202,3 @@ By the end of this milestone, the project had achieved one continuous developmen
 control philosophy to final scene outcome. Movement, representation, mediated influence, tool use,
 and puzzle completion all became stages of the same system, allowing the project to present itself
 as an integrated gameplay design from beginning to end.
-
-## Integrated Outcome
-This expanded structure shows that the project first established a control philosophy, then carried
-that philosophy into locomotion and character hierarchy, strengthened it through visual
-representation and rat-human identity, and finally completed it through tool-based interaction and
-puzzle-driven state transitions.

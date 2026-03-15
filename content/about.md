@@ -14,7 +14,7 @@ Hello, I’m Elif Doğan. I am a Computer Science master’s student based in Da
 
 ## From Data-Oriented Work to Automation Design
 
-Over time, my work has moved across data science, analytics, reporting, and software development, but the common thread has always been the same: identifying complexity, understanding structure, and turning repeated or difficult processes into clearer systems. I have worked on analytical and artificial intelligence projects, customer-oriented reporting, data structure analysis, and later on Python-based applications that automate core accounting processes, reduce manual workload, and improve data exchange between internal tools and external platforms. That progression shaped the way I think about engineering today. I am especially interested in solutions that sit between technical depth and practical value—systems that do not only function correctly, but also improve the way people work.
+Over time, my work has moved across data science, analytics, reporting, and software development, but the common thread has always been the same: identifying complexity, understanding structure, and turning repeated or difficult processes into clearer systems. I have worked on analytical and artificial intelligence projects, customer-oriented reporting, data structure analysis, and later on Python-based applications that automate core accounting processes, reduce manual workload, and improve data exchange between internal tools and external platforms. That progression shaped the way I think about engineering today. I am especially interested in solutions that sit between technical depth and practical value, systems that do not only function correctly, but also improve the way people work.
 
 ## Building with Structure and Intent
 

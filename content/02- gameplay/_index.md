@@ -41,21 +41,7 @@ Overall, the gameplay design integrates gesture-based movement, tool-mediated in
 
 ## User Input & Interaction Controls
 
-The interaction system relies on specific controller gestures and trigger inputs mapped to gameplay actions:
+## 
 
-### Left Controller – Index Trigger + Lateral Tilt
-Directional steering (Left / Right)
-
-### Right Controller – Index Trigger + Forward Extension
-Forward movement
-
-### Left Controller – Hand Trigger
-Knife grab interaction
-
-### Right Controller – Hand Trigger + Knife Alignment
-Key manipulation using the knife
-
-### Both Controllers – Index Triggers + Downward Swing Gesture
-Jump action
 
 ![Controlling Images](gameplay_page.png)

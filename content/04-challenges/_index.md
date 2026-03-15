@@ -10,9 +10,6 @@ resources:
     params:
       cover: true
 ---
-
-## Top Challenges 
-
 ### Rethinking locomotion as embodied control
 
 One of the most demanding parts of the project was building a locomotion system that did not rely on conventional joystick movement, but instead used controller-based gestures and trigger input as the primary driver of motion. This immediately made the problem more complex than a standard VR locomotion setup. Forward motion, steering, and jump-like actions were not mapped to a single analog stick. Instead, they had to emerge from combinations of controller states, spatial movement, and timing. In practice, this meant interpreting the left controller index trigger together with lateral tilt for steering, the right controller index trigger together with forward extension for propulsion, and both triggers with a downward swing motion for jump-related behavior.
@@ -33,6 +30,8 @@ Another layer of this challenge involved visual causality. Hair-link structures 
 
 The broader lesson here was that in VR, camera placement, hierarchy design, and control metaphor cannot be solved independently. They shape each other continuously. The project only became coherent when the visible body, the control source, and the camera’s perceptual role were all given distinct but coordinated responsibilities. In that sense, this challenge was not only about technical stability; it was about making the project’s central idea readable to the player.
 
+<img src="top_challenges_1.jpg" alt="Top Challenges" style="width: 200%; max-width: 1000px; display: block; margin: 1.25rem auto 2.5rem auto;" />
+
 ### Choosing reliability over raw physical complexity
 
 The third major challenge emerged when the project moved from locomotion into object interaction. The goal was not to let the player directly pick up a key and place it in a lock using a standard VR grab interaction. Instead, the interaction model extended the project’s broader design language of indirect control: the player first grabbed a knife, then used that knife as the active tool, and only through that tool manipulated the key before aligning it with the chest slot. This made the interaction system much more distinctive, but also much harder to stabilize.
@@ -44,3 +43,5 @@ That trade-off became one of the core engineering questions of the interaction s
 The same principle continued at the chest stage. Instead of depending on unstable trigger-heavy physical validation, chest resolution became more reliable through transform-based checks using position and rotation tolerances. Once the key reached the correct alignment, the rest of the sequence could happen as a clean state transition: chest resolution, optional knife cleanup, book spawning, and feedback presentation. In other words, the puzzle stopped being a fragile bundle of physics reactions and became an interaction pipeline with explicit state logic.
 
 What makes this challenge especially meaningful is that it reflects a broader truth about VR development: realism and reliability are not always aligned. A more physically complex interaction is not necessarily a better interaction if the player cannot clearly read what the system is doing. The final lesson was that successful VR interaction often depends less on simulating everything and more on choosing where to simplify, where to snap, and where to turn ambiguity into explicit state transitions.
+
+<img src="top_challenges_2.jpg" alt="Top Challenges" style="width: 200%; max-width: 1000px; display: block; margin: 1.25rem auto 2.5rem auto;" />

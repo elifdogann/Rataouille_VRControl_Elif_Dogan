@@ -1,0 +1,31 @@
+{{ with .Site.Params.projectResources }}
+  {{ $downloadURL := .downloadURL }}
+  {{ $presentationURL := .presentationURL }}
+  {{ $presentationEmbedURL := .presentationEmbedURL }}
+  {{ if or $downloadURL $presentationURL $presentationEmbedURL }}
+    <section class="project-resources">
+      <div class="project-resources__actions">
+        {{ with $downloadURL }}
+          <a class="project-resources__button" href="{{ . | safeURL }}" download>
+            Download Project
+          </a>
+        {{ end }}
+        {{ with $presentationURL }}
+          <a class="project-resources__button project-resources__button--secondary" href="{{ . | safeURL }}" target="_blank" rel="noopener">
+            Open Presentation
+          </a>
+        {{ end }}
+      </div>
+      {{ with $presentationEmbedURL }}
+        <div class="project-resources__embed">
+          <iframe
+            src="{{ . | safeURL }}"
+            title="Project Presentation"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+{{ end }}

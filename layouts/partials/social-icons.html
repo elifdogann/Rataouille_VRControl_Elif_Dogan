@@ -1,5 +1,10 @@
 {{ with .Site.Params.socialIcons }}
   <section class="social-icons">
+    {{ if .IsHome }}
+      <a class="social-icons__about" title="About Me" href="{{ "about/" | relURL }}">
+        About Me
+      </a>
+    {{ end }}
     {{ with .website }}
       <a target="_blank" rel="noopener" title="Website" href="{{ . }}">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
