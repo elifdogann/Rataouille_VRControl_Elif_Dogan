@@ -36,9 +36,9 @@ body > header {
 
 .page-content {
   width: 92%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 2rem auto 3rem auto;
-  text-align: center;
+  text-align: left;
   color: #a3a3a3;
 }
 
