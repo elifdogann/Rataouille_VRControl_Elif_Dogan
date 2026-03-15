@@ -1,0 +1,14 @@
+{{ if not .IsHome }}
+  <nav class="section-nav" aria-label="Section navigation">
+    {{ range .Site.Menus.main }}
+      {{ if and (ne .Name "Home") (ne .Name "About Me :)") }}
+        <a
+          class="section-nav__link{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} is-active{{ end }}"
+          href="{{ .URL }}"
+          {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}aria-current="page"{{ end }}>
+          {{ .Name }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </nav>
+{{ end }}
