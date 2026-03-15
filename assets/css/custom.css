@@ -124,7 +124,8 @@ body > header {
 }
 
 .section-nav {
-  width: min(1400px, calc(100% - 2rem));
+  width: calc(100% - 2rem);
+  max-width: 1400px;
   margin: 2.5rem auto 1.5rem auto;
   display: flex;
   flex-wrap: wrap;
